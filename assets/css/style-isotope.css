@@ -1,0 +1,146 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.isotope-wrapper{
+	margin:0 55px;}
+.isotope-wrapper .nav-groups{
+	padding:50px 0 15px 0;
+	text-align:center}
+.isotope-wrapper input[type="radio"]{
+	opacity:0;}
+.isotope-wrapper label {
+	margin-right:2px;
+	padding:0 15px 2px 0;
+	background:#FFF;
+	font-weight: 500;
+	cursor: pointer;
+	border:1px solid #000;
+	transition: all 0.3s; 
+}
+.isotope-wrapper label:hover {
+	background:#CCC;
+}
+.isotope-wrapper label.is-checked{
+	background:#000;
+	color:#FFF;}
+.isotope-item {
+	position: relative;
+	padding: 0;
+	overflow: hidden;
+	background: url(https://afarkas.github.io/lazysizes/assets/imgs/loader.gif) no-repeat center;
+}
+
+.lazyload, .lazyloading {
+	opacity: 0;
+}
+.lazyloaded {
+	opacity: 1;
+	transition: opacity 300ms;
+}
+/* ---- item elements ---- */
+
+.isotope-item a{
+	position:relative;
+	display:block;
+	margin:5px;
+	padding:5px;
+	overflow:hidden;
+	max-width: 100%;
+}
+.isotope-item a img {
+	width: 100%;
+	max-width: 100%;
+	display: block;
+	-webkit-transform: scale(1.08);
+	-moz-transform: scale(1.08);
+	-ms-transform: scale(1.08);
+	-o-transform: scale(1.08);
+	transform: scale(1.08);
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+	-webkit-filter:grayscale(1); /* Chrome, Opera */
+	-moz-filter:grayscale(1);
+	-ms-filter:grayscale(1);
+	filter:grayscale(1);
+
+}
+.isotope-item a:hover > img {
+	-webkit-transform: scale(1.25);
+	-moz-transform: scale(1.25);
+	-ms-transform: scale(1.25);
+	-o-transform: scale(1.25);
+	transform: scale(1.25);
+	-webkit-filter:brightness(1); /* Chrome, Opera */
+	-moz-filter:brightness(1);
+	-ms-filter:brightness(1);
+	filter:brightness(1);
+}
+.isotope-item a h6{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	opacity: 0;
+	left: 0;
+	top: 0;
+	transition: all 0.5s linear;
+	margin: 0;
+  display: flex;            /*NEW*/
+  justify-content: center;  /*NEW*/
+  align-items: center;      /*NEW*/
+  border: 5px solid #c7b299;
+}
+.isotope-item a h6 p {
+	letter-spacing: 1px;
+	font-size: 30px;
+	font-weight: bolder;
+	color: #c7b299;
+}
+
+/*.isotope-item a h6{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	opacity: 0;
+	left: 0;
+	top: 0;
+	transition: all 0.5s linear;
+	margin: 0;
+	display: table;
+	border-collapse:separate;
+	border-spacing: 5px;
+}
+.isotope-item a h6 p {
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	border: 5px solid #c7b299;
+	height: 100%;
+}
+.isotope-item a h6 p span {
+	display:inline-block;
+	letter-spacing: 1px;
+	font-size: 30px;
+	font-weight: bolder;
+	color: #c7b299;
+	height: 100%;
+}*/
+
+.isotope-item a:hover h6 {
+	opacity: 1;
+}
+.isotope-item > * {
+	margin: 0;
+	padding: 0;
+}
+@media (max-width: 768px) {
+	.isotope-wrapper{
+	margin:0 15px;}
+
+}

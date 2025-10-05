@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>TAMMY</title>
+  <title>HI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="" />
   <meta name="author" content="" />
@@ -15,9 +15,12 @@
   <link href="assets/css/style.css" rel="stylesheet" />
   <link rel="stylesheet" href="assets/color/default.css">
   <link href="assets/css/animate.css" rel="stylesheet">
+  <link href="assets/js/flexslider/flexslider.css" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="assets/js/mmenu/jquery.mmenu.css" />
 
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
   <script src="assets/js/modernizr.custom.js"></script>
 	<script type="text/javascript" src="assets/js/mmenu/jquery.mmenu.js"></script>  
 		<script type="text/javascript">
@@ -49,19 +52,21 @@
           <a href="#menu" class="mmenu hidden-lg hidden-md hidden-sm"><span></span></a>
         </div>
 
-            <!-- .navbar-collapse --> 
-              <div class="collapse navbar-collapse hidden-xs" id="bs-example-navbar-collapse-1">
-                <nav>
-                  <ul class="nav navbar-nav navbar-right">
-                  <li class="navigation"><a href="#contact">ABOUT</a></li>
-                    <li><a href="brand.html">branding</a></li>
-                    <li><a href="design.html">design</a></li>
-        <li><a href="photo.html">photo</a></li>
-        <li><a href="catlog.html">catlog</a></li>
-                  </ul>
-                </nav>
-              </div>
-              <!-- /.navbar-collapse --> 
+        <!-- .navbar-collapse --> 
+        <div class="collapse navbar-collapse hidden-xs" id="bs-example-navbar-collapse-1">
+          <nav>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="navigation"><a href="#contact">ABOUT</a></li>
+              <li><a href="edu.html">教育</a></li>
+              <li><a href="brand.html">產品</a></li>
+              
+              <li><a href="movie.html">影視</a></li>
+              <li><a href="book.html">出版社</a></li>
+              <li><a href="photo.html">攝影</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- /.navbar-collapse --> 
 
       </div>
     </div>
@@ -70,39 +75,58 @@
 
   </header>
   <!-- section intro -->
-  <section id="intro">
-  <div class="line visible-lg"></div>
-
-    <ul id="slippry-slider">
-      <li>
-        <a href="#slide1">
-        <img src="images/banner/02rwd.jpg" class="hidden-xs" alt="<h3>BRANDING</h3><span class='text tw'>自適應網站 / 網站搜尋優化 / CIS系統 / 商品攝影<a href='brand.html'>read more</a></span>">
-        <img src="images/banner/02rwd-phone.jpg" class="visible-xs" alt="<h3>BRAND</h3><span class='text tw'>自適應網站 / 網站搜尋優化 / CIS系統 / 商品攝影<a href='brand.html'>read more</a></span>">
-        </a>
-      </li>
-      
-      <li>
-        <a href="#slide2">
-        <img src="images/banner/04photo.jpg" class="hidden-xs" alt="<h3>photography</h3><span class='text tw'>產品 / 形象<a href='photo.html'>read more</a></span>">
-        <img src="images/banner/04photo-phone.jpg" class="visible-xs" alt="<h3>photography</h3><span class='text tw'>產品 / 形象<a href='photo.html'>read more</a></span>">
-		</a>
-      </li>      
-      
-      <li>
-        <a href="#slide3">
-        <img src="images/banner/03pack.jpg" class="hidden-xs" alt="<h3>Graphic design</h3> <span class='text tw'>包裝盒 / 贈品 / 型錄<a href='brand.html'>read more</a></span>">
-		<img src="images/banner/03pack-phone.jpg" class="visible-xs" alt="<h3>Graphic design</h3><span class='text tw'>包裝盒 / 贈品 / 型錄<a href='brand.html'>read more</a></span>">        
-        </a>
-      </li>
-      <li>
-        <a href="#slide4">
-        <img src="images/banner/app.jpg" class="hidden-xs" alt="<h3>APP</h3><span class='text tw'>UI / UX<a href='design.html'>read more</a></span>">
-        <img src="images/banner/app-phone.jpg" class="visible-xs" alt="<h3>APP</h3><span class='text tw'>包裝盒 / 贈品 / 型錄<a href='design.html'>read more</a></span>">
-        </a>
-      </li>
-      
-    </ul>
-  </section>
+  <div id="ad"><!-- flexslider -->
+    <section class="slider">
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <div class="background" style="background: url('images/banner/ui-bg.jpg') ;">
+                <div class="txt dark green eo">
+                  <h2 class="">UI DESIGN</h2>
+                  <p>系統介面 / WEB / RWD / APP</p>
+                  <a href="edu.html"><h3>more</h3></a>
+                </div>
+                <div class="pc-show"><img src="images/banner/ui.jpg"></div>
+                <div class="phone-show" style="background-image: url('images/banner/ui-phone.jpg');"><img src="images/banner/ui-phone-app.png"></div>
+            </div>
+          </li>
+          <li>
+            <div class="background" style="background:#121212;">
+              <div class="txt">
+                <h2>BRAND DESIGN</h2>
+                <p>風格 / 攝影 / WEB / 包裝 / 平面廣告</p>
+                <a href="brand.html"><h3>more</h3></a>
+              </div>
+              <div class="pc-show"><img src="images/banner/brand.jpg"></div>
+              <div class="phone-show" style="background-image: url('images/banner/brand-phone.jpg');"><img src="images/banner/brand-phone-app.png"></div>
+            </div>
+          </li>  	    		
+          <li>
+            <div class="background" style="background: url('images/banner/ui-bg.jpg') ;">
+              <div class="txt dark green">
+                <h2>BRAND DESIGN</h2>
+                <p>風格 / 吉祥物 / 活動 / WEB / APP</p>
+                <a href="edu.html"><h3>more</h3></a>
+              </div>
+              <div class="pc-show"><img src="images/banner/elevo.jpg"></div>
+              <div class="phone-show" style="background-image: url('images/banner/elevo-phone.jpg');"><img src="images/banner/elevo-phone-app.png"></div>              
+            </div>
+          </li>
+          <li>
+            <div class="background" style="background:#000 url('images/banner/photo-bg.jpg') ;">
+              <div class="txt">
+                <h2>PHOTOGRAPHY</h2>
+                <p>平面攝影 / 後製修圖</p>
+                <a href="photo.html"><h3>more</h3></a>
+              </div>
+              <img src="images/banner/photo.jpg" class="hidden-xs">
+              <img src="images/banner/photo-phone.jpg" class="visible-xs">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>	
+  </div><!-- flexslider -->
   <!-- end intro -->
   <!-- Section about -->
   <section id="contact" class="section">
@@ -116,12 +140,12 @@
 
             <div class="wow fadeInUp" data-wow-delay="0.2s">
               <h4 class="title-big">應用</h4>
-              <p class="description">adobe illustrator photoshop indesign /<br> CSS / JQ</p>
+              <p class="description">adobe illustrator photoshop indesign /<br> CSS / JQ / VUE</p>
             </div>
 
             <div class="wow fadeInUp" data-wow-delay="0.4s">
               <h4 class="title-big">專長</h4>
-              <p class="description">品牌視覺設計 / 形象規劃 /<br> GOOGLE相關網站排名關鍵字優化 / 網站自適應設計 /<br> CIS系統 / 印刷相關流程 / 製作物發包比價 /<br> 攝影 / 後製修圖</p>
+              <p class="description">品牌視覺設計 <br> 網站 /自適應 / UI<br> CIS / 印刷 / 發包比價 /<br> 攝影 / 後製修圖</p>
             </div>
 
 
@@ -163,13 +187,14 @@
 </div><!-- end page -->
 <!-- The menu -->    
       <nav id="menu">
-         <ul>
-            <li><a href="brand.html">brand</a></li>
-            <li><a href="design.html">design</a></li>
-        <li><a href="photo.html">photo</a></li>
-        <li><a href="catlog.html">catlog</a></li>
-	    	<li><a href="index.html#contact">contact</a></li>
-         </ul>
+        <ul>
+          <li><a href="edu.html">教育</a></li>
+          <li><a href="brand.html">產品</a></li>
+          <li><a href="movie.html">影視</a></li>
+          <li><a href="book.html">出版社</a></li>
+          <li><a href="photo.html">攝影</a></li>
+	    	  <li><a href="index.html#contact">contact</a></li>
+        </ul>
       </nav>     
   
   
@@ -186,13 +211,10 @@
   <script src="assets/js/jquery.fancybox-media.js"></script>
   <script src="assets/js/masonry.pkgd.min.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
-  <script src="assets/js/jquery.nicescroll.min.js"></script>
   <script src="assets/js/AnimOnScroll.js"></script>
 
   
-  <script>
-
-  
+  <script>  
     new AnimOnScroll(document.getElementById('grid'), {
       minDuration: 0.4,
       maxDuration: 0.7,
@@ -203,28 +225,35 @@
   
   <script>
     $(document).ready(function() {
-	// Initiate the wowjs
-  	new WOW().init();
-		
-      $('#slippry-slider').slippry(
-        defaults = {
-          transition: 'vertical',
-          useCSS: true,
-          speed: 5000,
-          pause: 3000,
-          initSingle: false,
-          auto: true,
-          preload: 'visible',
-          pager: false,//nav
-		  autoHover:true,
-		  adaptiveHeight: true,
-        })
-
-		
-    });
+      new WOW().init();
+      });
   </script>
   
+  <!-- FlexSlider -->
+  <script src="assets/js/flexslider/jquery.flexslider.js"></script>
 
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        slideshow:false,
+        touch: true,
+        directionNav: true,
+        pauseOnHover: true,
+        controlNav: false,
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+  <!-- Optional FlexSlider Additions -->
+  <script src="assets/js/flexslider/froogaloop.js"></script>
+	<script src="assets/js/flexslider/jquery.fitvid.js"></script>
 
   <script src="assets/js/custom.js"></script>
 
